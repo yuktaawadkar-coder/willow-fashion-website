@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | WILLOW</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">WILLOW</div>
+        <a href="index.html" class="shop-button">CONTINUE SHOPPING</a>
+    </header>
+
+    <main class="checkout-page">
+
+        <div class="section-heading">
+            <p>ALMOST YOURS</p>
+            <h2>Complete Your Order</h2>
+            <span>A little elegance is on its way.</span>
+        </div>
+
+        <div class="checkout-container">
+
+            <section class="checkout-details">
+
+                <h2>Delivery Information</h2>
+
+                <form id="checkout-form">
+
+<label>Full Name</label>
+<input type="text" name="fullName" placeholder="Enter your full name" required>
+
+<label>Email Address</label>
+<input type="email" name="email" placeholder="Enter your email" required>
+
+<label>Phone Number</label>
+<input type="tel" name="phone" placeholder="Enter your phone number" required>
+
+<label>Delivery Address</label>
+<textarea name="address" placeholder="House number, street, area..." required></textarea>
+
+<label>City</label>
+<input type="text" name="city" placeholder="Enter your city" required>
+
+<label>PIN Code</label>
+<input type="text" name="pinCode" placeholder="Enter your PIN code" required>
+
+
+                   
+                    <h2>Payment Method</h2>
+
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="UPI" required>
+                        UPI
+                    </label>
+
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="Card">
+                        Debit / Credit Card
+                    </label>
+
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="COD">
+                        Cash on Delivery
+                    </label>
+
+                    <button type="submit" class="checkout-button">
+                        PLACE ORDER
+                    </button>
+
+                </form>
+
+            </section>
+
+            <section class="order-summary">
+                <h2>Your Order</h2>
+                <div id="checkout-items">
+                    Your products will appear here.
+                </div>
+                <div id="checkout-total">
+                    Total: ₹0
+                </div>
+            </section>
+
+        </div>
+
+        </main>
+
+    <script src="checkout.js"></script>
+</body>
+</html>

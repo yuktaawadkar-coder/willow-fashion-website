@@ -1,0 +1,397 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WILLOW | Fashion & Lifestyle</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <header>
+
+        <div class="logo">WILLOW</div>
+        <button class="menu-toggle"
+    onclick="document.getElementById('main-nav').classList.toggle('active')">
+    ☰
+</button>
+
+        <nav id="main-nav">
+    <a href="#home">Home</a>
+    <a href="#products">Shop</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+        <!-- Shopping Bag Icon -->
+
+        <a href="#" class="cart" aria-label="Open shopping bag">
+
+            <svg viewBox="0 0 24 24" class="bag-icon">
+                <path d="M5 8h14l1 13H4L5 8Z"/>
+                <path d="M9 8V6a3 3 0 0 1 6 0v2"/>
+            </svg>
+
+            <span class="cart-count">0</span>
+
+        </a>
+
+    </header>
+
+
+    <!-- Shopping Bag Panel -->
+
+    <div class="cart-panel" id="cart-panel">
+
+        <div class="cart-header">
+
+            <h2>Your Shopping Bag</h2>
+
+            <button class="close-cart" id="close-cart" aria-label="Close shopping bag">
+                &times;
+            </button>
+
+        </div>
+
+        <div class="cart-items" id="cart-items">
+
+            <p class="empty-cart">Your bag is currently empty.</p>
+
+        </div>
+
+        <div class="cart-footer">
+
+            <div class="cart-total">
+                <span>Total</span>
+                <span id="cart-total">₹0</span>
+            </div>
+
+            <!-- Empty Bag Button -->
+
+            <button class="empty-bag-button" id="empty-bag">
+                EMPTY BAG
+            </button>
+
+            <button class="checkout-button">
+                PROCEED TO CHECKOUT
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Hero Section -->
+
+    <main class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="hero-label">THE WILLOW COLLECTION</p>
+
+            <h1>Elegance in Every Detail.</h1>
+
+            <p class="hero-description">
+                Style That Speaks. Elegance That Lasts.
+                Discover timeless fashion and lifestyle
+                essentials designed for everyday elegance.
+            </p>
+
+            <a href="#" class="shop-button">SHOP NOW</a>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1200&q=85"
+                alt="Elegant women's fashion collection"
+            >
+
+        </div>
+
+    </main>
+
+
+    <!-- Featured Collections -->
+
+    <section class="collections" id="collections">
+
+        <div class="section-heading">
+
+            <p>CURATED FOR YOU</p>
+
+            <h2>The WILLOW Edit</h2>
+
+            <span>Explore pieces that define your style.</span>
+
+        </div>
+
+        <div class="collection-container">
+
+            <!-- Clothing -->
+
+            <div class="collection-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=85"
+                    alt="Women's clothing"
+                >
+
+                <h3>Clothing</h3>
+
+                <a href="#">EXPLORE</a>
+
+            </div>
+
+
+            <!-- Accessories -->
+
+            <div class="collection-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=800&q=85"
+                    alt="Fashion accessories"
+                >
+
+                <h3>Accessories</h3>
+
+                <a href="#">EXPLORE</a>
+
+            </div>
+
+
+            <!-- Lifestyle -->
+
+            <div class="collection-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=85"
+                    alt="Lifestyle collection"
+                >
+
+                <h3>Lifestyle</h3>
+
+                <a href="#">EXPLORE</a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+  
+<!-- Featured Products -->
+
+<section class="featured-products" id="products">
+
+    <div class="section-heading">
+        <p>THE WILLOW SELECTION</p>
+        <h2>Our Featured Pieces</h2>
+        <span>Thoughtfully selected for your everyday style.</span>
+    </div>
+
+    <div class="product-container">
+
+        <!-- Product 1: Everyday Tote -->
+
+        <div class="product-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=85"
+                alt="Everyday tote bag"
+            >
+
+            <h3>Everyday Tote</h3>
+            <p class="product-price">₹799</p>
+
+            <p class="product-description">
+                A versatile tote for your everyday essentials.
+            </p>
+
+            <button class="details-toggle">VIEW DETAILS</button>
+
+            <div class="extra-details" style="display: none;">
+                <p>Material: Premium fabric</p>
+                <p>Style: Everyday carry</p>
+            </div>
+
+            <button class="add-to-bag">ADD TO BAG</button>
+
+        </div>
+
+        <!-- Product 2: Classic Shirt -->
+
+        <div class="product-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1598554747436-c9293d6a588f?auto=format&fit=crop&w=800&q=85"
+                alt="Elegant shirt"
+            >
+
+            <h3>Classic Shirt</h3>
+            <p class="product-price">₹999</p>
+
+            <p class="product-description">
+                A timeless shirt designed for effortless everyday style.
+            </p>
+
+            <button class="details-toggle">VIEW DETAILS</button>
+
+            <div class="extra-details" style="display: none;">
+                <p>Style: Casual and elegant</p>
+                <p>Fit: Regular</p>
+            </div>
+
+            <button class="add-to-bag">ADD TO BAG</button>
+
+        </div>
+
+        <!-- Product 3: Timeless Watch -->
+
+        <div class="product-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=85"
+                alt="Classic wristwatch"
+            >
+
+            <h3>Timeless Watch</h3>
+            <p class="product-price">₹1,299</p>
+
+            <p class="product-description">
+                An elegant timepiece that complements every look.
+            </p>
+
+            <button class="details-toggle">VIEW DETAILS</button>
+
+            <div class="extra-details" style="display: none;">
+                <p>Style: Minimal and classic</p>
+                <p>Design: Everyday wear</p>
+            </div>
+
+            <button class="add-to-bag">ADD TO BAG</button>
+
+        </div>
+
+        <!-- Product 4: Minimal Decor -->
+
+        <div class="product-card">
+
+            <img
+                src="decor.png"
+                alt="Minimal beige home decor"
+            >
+
+            <h3>Minimal Decor</h3>
+            <p class="product-price">₹599</p>
+
+            <p class="product-description">
+                Subtle decor to bring warmth to your living space.
+            </p>
+
+            <button class="details-toggle">VIEW DETAILS</button>
+
+            <div class="extra-details" style="display: none;">
+                <p>Style: Minimalist</p>
+                <p>Theme: Neutral and contemporary</p>
+            </div>
+
+            <button class="add-to-bag">ADD TO BAG</button>
+
+        </div>
+
+    </div>
+
+</section>
+  
+    </section>
+    <!-- About Section -->
+
+<section class="about-section" id="about">
+    <h2>ABOUT WILLOW</h2>
+    <p>
+        WILLOW is a fashion and lifestyle destination inspired by
+        timeless style, simplicity and everyday elegance.
+        We believe in bringing together thoughtful design and
+        effortless living.
+    </p>
+</section>
+
+<!-- Contact Section -->
+
+<section class="contact-section" id="contact">
+
+    <div class="section-heading">
+        <p>WE'D LOVE TO HEAR FROM YOU</p>
+        <h2>Get in Touch</h2>
+        <span>Have a question? Send us a message.</span>
+    </div>
+
+    <form id="contact-form">
+
+        <label for="contact-name">Your Name</label>
+        <input type="text" id="contact-name" placeholder="Enter your name" required>
+
+        <label for="contact-email">Email Address</label>
+        <input type="email" id="contact-email" placeholder="Enter your email" required>
+
+        <label for="contact-message">Your Message</label>
+        <textarea id="contact-message" placeholder="Write your message here..." required></textarea>
+
+        <button type="submit">SEND MESSAGE</button>
+        <p id="contact-success"></p> 
+
+    </form>
+
+</section>
+
+
+
+    <!-- Footer -->
+
+    <footer class="willow-footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+                <h2>WILLOW</h2>
+                <p>Style That Speaks. Elegance That Lasts.</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>EXPLORE</h3>
+                <a href="#home">Home</a>
+                <a href="#collections">Collections</a>
+                <a href="#products">Shop</a>
+            </div>
+
+            <div class="footer-links">
+                <h3>INFORMATION</h3>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact</a>
+                <a href="checkout.html">Shopping Bag</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 WILLOW. All Rights Reserved.</p>
+            <p>Made with elegance.</p>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
