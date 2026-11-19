@@ -333,7 +333,7 @@ main p {
 .add-to-bag {
     width: 100%;
     padding: 13px 15px;
-    margin-top: 10px;
+    margin-top: auto;
     background-color: #332D2A;
     color: #FAF8F4;
     border: 1px solid #332D2A;
@@ -1018,8 +1018,8 @@ main p {
     color: #8B7770;
     line-height: 1.6;
     margin: 10px 0;
+    min-height: 65px;
 }
-
 .details-toggle {
     background: transparent;
     border: 1px solid #B58B82;

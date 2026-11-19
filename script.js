@@ -205,13 +205,19 @@ detailButtons.forEach(function(button) {
 const contactForm = document.querySelector("#contact-form");
 const contactSuccess = document.querySelector("#contact-success");
 
+// Contact Form Submission
 contactForm.addEventListener("submit", function(event) {
     event.preventDefault();
 
+    // Display success message
     contactSuccess.textContent =
-    "Thank you! Your message has been submitted successfully."; 
+        "Thank you! Your message has been submitted successfully.";
 
-    setTimeout(function() { 
+    // Clear all form fields
+    contactForm.reset();
+
+    // Hide success message after 4 seconds
+    setTimeout(function() {
         contactSuccess.textContent = "";
     }, 4000);
-}); 
+});
